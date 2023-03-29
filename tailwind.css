@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply font-fira;
+    }
+
+    body {
+        @apply bg-amber-100;
+    }
+
+    p {
+        @apply font-semibold leading-7;
+    }
+}
+
+@layer components {
+    .slideDown {
+        @apply animate-[slide-down_1s_ease-in-out_forwards];
+    }
+
+    .birthdayIn {
+        @apply animate-[birthday-in_1s_ease-in-out_forwards];
+    }
+    .birthdayOut {
+        @apply animate-[birthday-out_1s_ease-in-out_forwards];
+    }
+
+    .slideLeft {
+        @apply animate-[slide-left_1s_ease-in-out_forwards];
+    }
+
+    .slideRight {
+        @apply animate-[slide-right_1s_ease-in-out_forwards];
+    }
+
+    .fadeOut {
+        @apply animate-[fade-out_0.5s_ease-in-out_forwards];
+    }
+
+    .fadeIn {
+        @apply animate-[fade-in_0.5s_ease-in-out_forwards];
+    }
+
+    .lastBirthday-in {
+        @apply animate-[last-birthday-in_1s_ease-in-out_forwards];
+    }
+}

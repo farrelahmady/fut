@@ -85,10 +85,10 @@ $(document).ready(async function () {
 function textAnim(params) {
     return new Promise((resolve, reject) => {
         if (params.textStyle) {
-            $("p").removeClass("text-[2.2vh]");
+            $("p").removeClass("text-base");
             $("p").addClass(params.textStyle);
         } else {
-            $("p").addClass("text-[2.2vh]");
+            $("p").addClass("text-base");
         }
         $("p").addClass("fadeIn");
         let char = "";

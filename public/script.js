@@ -28,12 +28,12 @@ $(document).ready(async function () {
         },
     ];
 
-    // for (let i = 0; i < prologues.length; i++) {
-    //     scenes.push({
-    //         params: { message: prologues[i], textStyle: "text-2xl" },
-    //         function: textAnim,
-    //     });
-    // }
+    for (let i = 0; i < prologues.length; i++) {
+        scenes.push({
+            params: { message: prologues[i], textStyle: "text-2xl" },
+            function: textAnim,
+        });
+    }
 
     scenes.push({
         params: null,
